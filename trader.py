@@ -1,8 +1,8 @@
 import threading
-from coinbase.wallet.client import Client
-from money import Money
+from coinbase.wallet.client import Client #Get from offical coinbase api
+from money import Money #Do pip install money
 
-from secrets import api_key, api_secret
+from secrets_default import api_key, api_secret
 
 market_fees = 0.15          # coinbase per-transaction fee in dollars
 min_profit_margin = 2.0     # minimum price increase before we sell out
